@@ -22,6 +22,19 @@ p {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+    line-height: 24px;
+}
+#page-header #page-header-inner {
+    position: relative;
+}
+#page-header #logo {
+    width: 48px;
+}
+#page-header #page-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 56px;
 }
 #page-header p {
     margin: 0;
@@ -43,6 +56,13 @@ h2 {
     font-family: 'Roboto';
     text-transform: uppercase;
     margin: 24px 0 4px 0;
+}
+h2::before {
+    display: inline-block;
+    margin: 0 6px 0 0;
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8" width="16" height="8"><path style="fill:%23ff8218;" d="M -4.8441224e-7,0 7.2099117,8 V 4.6621911 L 2.7638334,0 Z M 12.783141,0 8.3370629,4.6621911 V 8 L 15.546975,0 Z" /></svg>');
+    width: 16px;
+    height: 8px;
 }
 table {
     font-size: 14px;
