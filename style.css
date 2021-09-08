@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
+
 body {
     margin: 0;
     padding: 24px;
     background-color: #f6f6f3;
     color: #1c1c1c;
     border-top: 3px solid #ff8218;
-    font-family: sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 p {
     margin: 0;
@@ -38,6 +40,7 @@ p {
 h2 {
     font-size: 14px;
     font-weight: bold;
+    font-family: 'Roboto';
     text-transform: uppercase;
     margin: 24px 0 4px 0;
 }
@@ -80,6 +83,7 @@ ul.projects > a > li span.year {
     color: #1c1c1c;
     font-size: 14px;
     font-weight: bold;
+    font-family: 'Roboto';
 }
 ul.projects > a > li p {
     height: 36px;
