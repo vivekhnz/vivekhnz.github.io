@@ -12,23 +12,25 @@
 <body>
     <div id="page-container">
         <div id="page-header">
-            <a href="/">
-                <div id="page-header-inner">
+            <div id="page-header-inner">
+                <a href="/">
                     <svg id="logo" xmlns='http://www.w3.org/2000/svg' viewBox="0 0 64 64">
-                        <circle style="fill:#ff8218" cx="32" cy="32" r="32" />
+                        <circle id="logo-outline" style="fill:transparent; stroke:#ff8218; stroke-width: 1.5px;" cx="32"
+                            cy="32" r="31" />
+                        <circle style="fill:#ff8218" cx="32" cy="32" r="28" />
                         <path
                             d="M 12.369777,23.915778 30.576858,44.117835 V 35.689012 L 19.349279,23.915778 Z m 32.280984,0 -11.227578,11.773234 v 8.428823 L 51.630264,23.915778 Z"
                             style="fill:#ffffff" />
                     </svg>
-                    <div id="page-title">
-                        <h1>Vivek Hari</h1>
-                        <p>Software Engineer</p>
-                    </div>
+                </a>
+                <div id="page-title">
+                    <h1>Vivek Hari</h1>
+                    <p>Software Engineer</p>
                 </div>
-            </a>
+            </div>
             <ul class="links">
-                <li><a href="https://www.linkedin.com/in/vivekhnz">LinkedIn</a></li>
-                <li><a href="https://github.com/vivekhnz">GitHub</a></li>
+                <li><a class="link link-linkedin" href="https://www.linkedin.com/in/vivekhnz">LinkedIn</a></li>
+                <li><a class="link link-github" href="https://github.com/vivekhnz">GitHub</a></li>
             </ul>
         </div>
         <h2>About Me</h2>
