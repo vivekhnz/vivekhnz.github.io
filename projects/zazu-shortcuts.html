@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Vivek Hari | Zazu Shortcuts</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="page-header">
+            <a href="/">
+                <div id="page-header-inner">
+                    <svg id="logo" xmlns='http://www.w3.org/2000/svg' viewBox="0 0 64 64">
+                        <circle style="fill:#ff8218" cx="32" cy="32" r="32" />
+                        <path
+                            d="M 12.369777,23.915778 30.576858,44.117835 V 35.689012 L 19.349279,23.915778 Z m 32.280984,0 -11.227578,11.773234 v 8.428823 L 51.630264,23.915778 Z"
+                            style="fill:#ffffff" />
+                    </svg>
+                    <div id="page-title">
+                        <h1>Vivek Hari</h1>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+            </a>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/vivekhnz">LinkedIn</a></li>
+                <li><a href="https://github.com/vivekhnz">GitHub</a></li>
+            </ul>
+        </div>
+        <a class="link-home" href="/">Home</a>
+        <div id="project-header">
+            <p>Sep 2019 - Dec 2019</p>
+            <h1>Zazu Shortcuts</h1>
+        </div>
+        <h2>About</h2>
+        <p>
+            Zazu Shortcuts is a plugin for the <a href="https://zazuapp.org/">Zazu</a> launcher that allows
+            you to launch programs and URLs using custom aliases. I built it because I wanted a quicker way
+            of navigating around our infrastructure at work and executing commonly used commands. Some
+            examples of shortcuts I use are opening a TortoiseSVN log for a particular code branch or
+            revision, opening the issue details page for a set of Jira issues, opening a solution in an
+            elevated Visual Studio instance and viewing TeamCity build results for a specific branch. It
+            saves myself and others on my team a lot of repetitive typing each day.
+            <br /><br />
+            Zazu is an Electron application and Zazu Shortcuts is written in JavaScript as a result.
+            Zazu plugin configuration is stored in JSON file. To make it easier to develop the plugin, I
+            defined some TypeScript declaration files (.d.ts) for Zazu's APIs and the configuration file
+            schema. In combination with JSDoc annotations in the plugin source code, this enables Visual
+            Studio Code (my editor of choice) to provide type checking while working in the Zazu Shortcuts
+            codebase. This helps catch mismatched type bugs that dynamically-typed languages such as
+            JavaScript are susceptible to.
+        </p>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://github.com/vivekhnz/zazu-shortcuts">GitHub repository</a></li>
+        </ul>
+        <h2>Technologies Used</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Languages</td>
+                    <td>JavaScript, TypeScript</td>
+                </tr>
+                <tr>
+                    <td>Tools</td>
+                    <td>Visual Studio Code</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Examples</h2>
+        <figure>
+            <img src="../assets/zazu-shortcuts_ZeroArgShortcut.gif"
+                alt="Quickly launch programs by associating a program with a custom alias." />
+            <figcaption>Quickly launch programs by associating a program with a custom alias.</figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/zazu-shortcuts_AutoSuggest.gif"
+                alt="Leverage aliases and auto-suggest to quickly navigate to commonly accessed locations." />
+            <figcaption>
+                Leverage aliases and auto-suggest to quickly navigate to commonly accessed locations.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/zazu-shortcuts_Batching.gif"
+                alt="Execute the same command multiple times with different values." />
+            <figcaption>Execute the same command multiple times with different values.</figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>

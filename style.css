@@ -12,6 +12,10 @@ p {
     margin: 0;
     font-size: 14px;
 }
+figure {
+    margin: 0 0 24px 0;
+    font-size: 14px;
+}
 
 #page-container {
     max-width: 720px;
@@ -26,6 +30,7 @@ p {
 }
 #page-header #page-header-inner {
     position: relative;
+    color: #1c1c1c;
 }
 #page-header #logo {
     width: 48px;
@@ -50,6 +55,12 @@ p {
     font-size: 14px;
 }
 
+h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+    line-height: 36px;
+}
 h2 {
     font-size: 14px;
     font-weight: bold;
@@ -130,4 +141,40 @@ ul.projects > a > li ul > li::after {
 }
 ul.projects > a > li ul > li:last-child::after {
     display: none;
+}
+
+.link-home {
+    display: inline-block;
+    margin: 24px 0 4px 0;
+    padding: 0 8px 4px 0px;
+    color: #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+    user-select: none;
+}
+.link-home::before {
+    display: inline-block;
+    margin: 0 6px 0 0;
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" height="10"><path d="M 8,1 1,7 8,13" style="fill: transparent; stroke: black; stroke-width: 2px;" /></svg>');
+    width: 8px;
+    height: 14px;
+}
+.link-home:hover {
+    color: #ff8218;
+    border-bottom: 1px solid #ff8218;
+}
+.link-home:hover::before {
+    content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" height="10"><path d="M 8,1 1,7 8,13" style="fill: transparent; stroke: %23ff8218; stroke-width: 2px;" /></svg>');
+}
+
+#project-header p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    margin: 24px 0 4px 0;
 }
