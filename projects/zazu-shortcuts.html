@@ -38,41 +38,48 @@
             <p>Sep 2019 - Dec 2019</p>
             <h1>Zazu Shortcuts</h1>
         </div>
-        <h2>About</h2>
-        <p>
-            Zazu Shortcuts is a plugin for the <a href="https://zazuapp.org/">Zazu</a> launcher that allows
-            you to launch programs and URLs using custom aliases. I built it because I wanted a quicker way
-            of navigating around our infrastructure at work and executing commonly used commands. Some
-            examples of shortcuts I use are opening a TortoiseSVN log for a particular code branch or
-            revision, opening the issue details page for a set of Jira issues, opening a solution in an
-            elevated Visual Studio instance and viewing TeamCity build results for a specific branch. It
-            saves myself and others on my team a lot of repetitive typing each day.
-            <br /><br />
-            Zazu is an Electron application and Zazu Shortcuts is written in JavaScript as a result.
-            Zazu plugin configuration is stored in JSON file. To make it easier to develop the plugin, I
-            defined some TypeScript declaration files (.d.ts) for Zazu's APIs and the configuration file
-            schema. In combination with JSDoc annotations in the plugin source code, this enables Visual
-            Studio Code (my editor of choice) to provide type checking while working in the Zazu Shortcuts
-            codebase. This helps catch mismatched type bugs that dynamically-typed languages such as
-            JavaScript are susceptible to.
-        </p>
-        <h2>Links</h2>
-        <ul class="links">
-            <li><a class="link link-github" href="https://github.com/vivekhnz/zazu-shortcuts">GitHub repository</a></li>
-        </ul>
-        <h2>Technologies Used</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Languages</td>
-                    <td>JavaScript, TypeScript</td>
-                </tr>
-                <tr>
-                    <td>Tools</td>
-                    <td>Visual Studio Code</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="content-row-2-1">
+            <div class="content-cell">
+                <h2>About</h2>
+                <p>
+                    Zazu Shortcuts is a plugin for the <a href="https://zazuapp.org/">Zazu</a> launcher that allows
+                    you to launch programs and URLs using custom aliases. I built it because I wanted a quicker way
+                    of navigating around our infrastructure at work and executing commonly used commands. Some
+                    examples of shortcuts I use are opening a TortoiseSVN log for a particular code branch or
+                    revision, opening the issue details page for a set of Jira issues, opening a solution in an
+                    elevated Visual Studio instance and viewing TeamCity build results for a specific branch. It
+                    saves myself and others on my team a lot of repetitive typing each day.
+                    <br /><br />
+                    Zazu is an Electron application and Zazu Shortcuts is written in JavaScript as a result.
+                    Zazu plugin configuration is stored in JSON file. To make it easier to develop the plugin, I
+                    defined some TypeScript declaration files (.d.ts) for Zazu's APIs and the configuration file
+                    schema. In combination with JSDoc annotations in the plugin source code, this enables Visual
+                    Studio Code (my editor of choice) to provide type checking while working in the Zazu Shortcuts
+                    codebase. This helps catch mismatched type bugs that dynamically-typed languages such as
+                    JavaScript are susceptible to.
+                </p>
+            </div>
+            <div class="content-cell">
+                <h2>Links</h2>
+                <ul class="links">
+                    <li><a class="link link-github" href="https://github.com/vivekhnz/zazu-shortcuts">GitHub
+                            repository</a></li>
+                </ul>
+                <h2>Technologies Used</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Languages</td>
+                            <td>JavaScript, TypeScript</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>Visual Studio Code</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <h2>Examples</h2>
         <figure>
             <img src="../assets/zazu-shortcuts_ZeroArgShortcut.gif"
