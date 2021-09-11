@@ -158,6 +158,9 @@ ul.links {
 }
 
 ul.projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
     padding: 0;
     list-style: none;
 }
@@ -165,7 +168,7 @@ ul.projects > a {
     text-decoration: none;
 }
 ul.projects > a > li {
-    margin: 0 0 12px 0;
+    margin: 0;
     padding: 12px;
     background-color: #ebebeb;
     border: 1px solid #b2b2b2;
@@ -213,6 +216,16 @@ ul.projects > a > li ul > li::after {
 }
 ul.projects > a > li ul > li:last-child::after {
     display: none;
+}
+@media (min-width: 900px) {
+    ul.projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1310px) {
+    ul.projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .link-home {
