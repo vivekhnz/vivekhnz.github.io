@@ -16,6 +16,9 @@ figure {
     margin: 0 0 24px 0;
     font-size: 14px;
 }
+figure img {
+    max-width: 100%;
+}
 
 #page-container {
     max-width: 720px;
