@@ -55,7 +55,7 @@ figure img {
     max-width: 520px;
     margin: 0 auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 960px) {
     #page-container {
         max-width: 824px;
     }
@@ -71,8 +71,11 @@ figure img {
         flex-basis: 0;
         flex-grow: 1;
     }
+    h2::before {
+        margin: 0 6px 0 -22px;
+    }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1410px) {
     #page-container {
         max-width: 1248px;
     }
@@ -88,6 +91,9 @@ figure img {
         flex-basis: 0;
         flex-grow: 1;
     }
+    h2::before {
+        margin: 0 6px 0 -22px;
+    }
 }
 
 #page-header h1 {
@@ -99,6 +105,7 @@ figure img {
 #page-header #page-header-inner {
     position: relative;
     color: #1c1c1c;
+    margin-left: -4px;
 }
 #page-header #logo {
     width: 52px;
@@ -126,6 +133,35 @@ figure img {
 #page-header ul.links li {
     display: inline-block;
     margin-right: 8px;
+}
+
+@media (min-width: 960px) {
+    #page-header #page-header-inner {
+        margin-left: -60px;
+    }
+    #page-header #logo {
+        width: 52px;
+    }
+    #page-header #page-title {
+        left: 60px;
+    }
+    #page-header ul.links {
+        margin: 0;
+    }
+}
+@media (min-width: 1410px) {
+    #page-header #page-header-inner {
+        margin-left: -76px;
+    }
+    #page-header #logo {
+        width: 64px;
+    }
+    #page-header #page-title {
+        left: 76px;
+    }
+    #page-header ul.links {
+        margin: -4px 0 0 0;
+    }
 }
 
 ul.links {
@@ -219,12 +255,12 @@ ul.projects > a > li ul > li::after {
 ul.projects > a > li ul > li:last-child::after {
     display: none;
 }
-@media (min-width: 900px) {
+@media (min-width: 960px) {
     ul.projects {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1410px) {
     ul.projects {
         grid-template-columns: repeat(3, 1fr);
     }
