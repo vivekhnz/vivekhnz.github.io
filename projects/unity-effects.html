@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Unity Effects · Vivek Hari </title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="page-header">
+            <div id="page-header-inner">
+                <a href="/">
+                    <svg id="logo" xmlns='http://www.w3.org/2000/svg' viewBox="0 0 72 72">
+                        <circle id="logo-outline" style="fill:transparent; stroke:#ff8218; stroke-width: 2px;" cx="36"
+                            cy="36" r="35" />
+                        <circle style="fill:#ff8218" cx="36" cy="36" r="32" />
+                        <path
+                            d="M 16.369757,27.915779 34.576851,48.117836 V 39.689013 L 23.349273,27.915779 Z m 32.281003,0 -11.227588,11.773234 v 8.428823 L 55.630256,27.915779 Z"
+                            style="fill:#ffffff" />
+                    </svg>
+                </a>
+                <div id="page-title">
+                    <h1>Vivek Hari</h1>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <ul class="links">
+                <li><a class="link link-linkedin" href="https://www.linkedin.com/in/vivekhnz">LinkedIn</a></li>
+                <li><a class="link link-github" href="https://github.com/vivekhnz">GitHub</a></li>
+            </ul>
+        </div>
+        <a class="link-home" href="/">Home</a>
+        <div id="project-header">
+            <p>Nov 2017 - Feb 2018</p>
+            <h1>Unity Effects</h1>
+        </div>
+        <div class="content-row-2-1">
+            <div class="content-cell">
+                <h2>About</h2>
+                <p>
+                    Unity Effects is a collection of video game effects recreated in the
+                    <a href="https://unity.com/">Unity</a> game engine. I built it because I wanted to learn more
+                    about writing shaders and was inspired by the VFX work in some games I had recently played.
+                    <br /><br />
+                    The shaders are written in a Unity-specific language called ShaderLab. ShaderLab shaders act
+                    as containers for the HLSL shader code as well as metadata describing how the engine should use
+                    the shader. This metadata includes the shader's inputs and outputs, blend modes as well as
+                    which stage(s) of the render pipeline the shader should run in. For complex effects that
+                    need to be animated (such as the Oxenfree rewind and Black Flag Animus effects), I leverage
+                    Unity's Mecanim animation system to animate the shader inputs.
+                </p>
+            </div>
+            <div class="content-cell">
+                <h2>Links</h2>
+                <ul class="links">
+                    <li>
+                        <a class="link link-github" href="https://github.com/vivekhnz/UnityEffects">
+                            GitHub repository
+                        </a>
+                    </li>
+                </ul>
+                <h2>Technologies Used</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Languages</td>
+                            <td>C#, HLSL, ShaderLab</td>
+                        </tr>
+                        <tr>
+                            <td>Engine</td>
+                            <td>Unity</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>Examples</h2>
+        <figure>
+            <img src="../assets/unity-effects_InfiniteForestGate.gif"
+                alt="Infinite Forest Gate - Destiny 2: Curse of Osiris" />
+            <figcaption>
+                A recreation of the gate to the Infinite Forest found on Mercury in Destiny 2: Curse of Osiris.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/unity-effects_OxenfreeRewind.gif" alt="Rewind Transition - Oxenfree" />
+            <figcaption>
+                A recreation of the rewind transition animation preceding Oxenfree's 'time loop' sequences.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/unity-effects_BlackFlagAnimus.gif"
+                alt="Animus Transition - Assassin's Creed IV: Black Flag" />
+            <figcaption>
+                A recreation of the Animus transition effects that are played when starting and finishing sequences
+                in Assassin's Creed IV: Black Flag.
+            </figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>
