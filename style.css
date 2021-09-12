@@ -35,10 +35,12 @@ h2::before {
 table {
     font-size: 14px;
 }
+table td {
+    vertical-align: top;
+}
 table td:first-child {
     font-weight: bold;
     text-align: right;
-    vertical-align: top;
     padding-right: 8px;
 }
 figure {
