@@ -73,7 +73,7 @@ div.video-container iframe {
     }
     div.content-row-2-1 {
         display: flex;
-        gap: 24px;
+        gap: 32px;
     }
     div.content-row-2-1 div.content-cell:first-of-type {
         flex-basis: 0;
@@ -93,7 +93,7 @@ div.video-container iframe {
     }
     div.content-row-2-1 {
         display: flex;
-        gap: 24px;
+        gap: 32px;
     }
     div.content-row-2-1 div.content-cell:first-of-type {
         flex-basis: 0;
