@@ -245,11 +245,11 @@ ul.projects > a > li {
     margin: 0;
     background-color: #ebebeb;
     border-radius: 4px;
-    border: none;
-    height: 100px;
+    border: 1px solid #b2b2b2;
+    height: 220px;
 }
 ul.projects > a > li > img {
-    display: none;
+    display: block;
     position: absolute;
     width: 100%;
     height: 120px;
@@ -266,7 +266,6 @@ ul.projects > a > li > div {
     height: 85px;
     padding: 6px 12px;
     background-color: #ebebeb;
-    border: 1px solid #b2b2b2;
     border-top: 3px solid #ff8218;
     border-radius: 0 0 4px 4px;
 }
@@ -312,38 +311,17 @@ ul.projects > a > li ul > li::after {
 ul.projects > a > li ul > li:last-child::after {
     display: none;
 }
+
 @media (min-width: 960px) {
     ul.projects {
         gap: 24px;
         grid-template-columns: repeat(2, 1fr);
-    }
-    ul.projects > a > li {
-        border: 1px solid #b2b2b2;
-        height: 220px;
-    }
-    ul.projects > a > li > img {
-        display: block;
-    }
-    ul.projects > a > li > div {
-        border: none;
-        border-top: 3px solid #ff8218;
     }
 }
 @media (min-width: 1410px) {
     ul.projects {
         gap: 24px;
         grid-template-columns: repeat(3, 1fr);
-    }
-    ul.projects > a > li {
-        border: 1px solid #b2b2b2;
-        height: 220px;
-    }
-    ul.projects > a > li > img {
-        display: block;
-    }
-    ul.projects > a > li > div {
-        border: none;
-        border-top: 3px solid #ff8218;
     }
 }
 
