@@ -232,7 +232,7 @@ ul.links {
 ul.projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 12px;
+    gap: 24px;
     padding: 0;
     margin-top: 12px;
     list-style: none;
@@ -314,13 +314,11 @@ ul.projects > a > li ul > li:last-child::after {
 
 @media (min-width: 960px) {
     ul.projects {
-        gap: 24px;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (min-width: 1410px) {
     ul.projects {
-        gap: 24px;
         grid-template-columns: repeat(3, 1fr);
     }
 }
