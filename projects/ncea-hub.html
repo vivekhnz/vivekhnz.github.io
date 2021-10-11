@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>NCEA Hub · Vivek Hari </title>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="page-header">
+            <div id="page-header-inner">
+                <a href="/">
+                    <svg id="logo" xmlns='http://www.w3.org/2000/svg' viewBox="0 0 72 72">
+                        <circle id="logo-outline" style="fill:transparent; stroke:#ff8218; stroke-width: 2px;" cx="36"
+                            cy="36" r="35" />
+                        <circle style="fill:#ff8218" cx="36" cy="36" r="32" />
+                        <path
+                            d="M 16.369757,27.915779 34.576851,48.117836 V 39.689013 L 23.349273,27.915779 Z m 32.281003,0 -11.227588,11.773234 v 8.428823 L 55.630256,27.915779 Z"
+                            style="fill:#ffffff" />
+                    </svg>
+                </a>
+                <div id="page-title">
+                    <h1>Vivek Hari</h1>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+            <ul class="links">
+                <li><a class="link link-linkedin" href="https://www.linkedin.com/in/vivekhnz">LinkedIn</a></li>
+                <li><a class="link link-github" href="https://github.com/vivekhnz">GitHub</a></li>
+            </ul>
+        </div>
+        <a class="link-home" href="/">Home</a>
+        <div id="project-header">
+            <p>Nov 2013 - Apr 2014</p>
+            <h1>NCEA Hub</h1>
+        </div>
+        <div class="content-row-2-1">
+            <div class="content-cell">
+                <h2>About</h2>
+                <p>
+                    NCEA Hub was a Windows Store app to help students track their progress towards achieving an
+                    NCEA qualification, the official secondary-school qualification in New Zealand. The app allows
+                    students working towards a Level 1, Level 2 or Level 3 NCEA certificate to keep track of how
+                    many credits they have achieved as well as access information and resources about subjects and
+                    achievement standards. I built NCEA Hub in my spare time while working towards an Level 2 NCEA
+                    qualification because I wanted a better way of tracking my NCEA certificate progress.
+                    <br /><br />
+                    In addition to allowing students to enter their results, the app also contains an internal
+                    database of NCEA subjects and standards. As their was no API to access this data at the time,
+                    the database was periodically rebuilt by a custom C# tool. This tool scraped the NZQA website
+                    for subject and standard information, extracted specific achievement criteria from Microsoft
+                    Word standard documents and produced a structured format that could be searched within the app.
+                </p>
+            </div>
+            <div class="content-cell">
+                <h2>Technologies Used</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Languages</td>
+                            <td>C#, XAML</td>
+                        </tr>
+                        <tr>
+                            <td>Frameworks</td>
+                            <td>UWP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>Media</h2>
+        <figure>
+            <img src="../assets/ncea-hub_Homepage.png" alt="NCEA Hub - Homepage" />
+            <figcaption>Easily view a summary of your NCEA progress from the homepage.</figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/ncea-hub_SubjectDetails.png" alt="NCEA Hub - Subject Details" />
+            <figcaption>View a summary of your credits and endorsement status for a subject.</figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/ncea-hub_StandardDetails.png" alt="NCEA Hub - Standard Details" />
+            <figcaption>Access standard information and external resources.</figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/ncea-hub_Search.png" alt="NCEA Hub - Search" />
+            <figcaption>Search for subjects and standards.</figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>
