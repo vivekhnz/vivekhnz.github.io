@@ -18,6 +18,7 @@ ul {
 }
 ul.list-two-col {
     columns: 2;
+    column-gap: 99px;
 }
 h1 {
     font-size: 36px;
