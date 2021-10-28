@@ -43,14 +43,21 @@
             <div class="content-cell">
                 <h2>About</h2>
                 <p>
-                    Sierra is a work-in-progress heightmap editor designed around sculpting virtual terrain.
-                    I decided to build it to learn C++, OpenGL and WPF.
+                    Sierra is a heightmap editor focused around sculpting virtual terrain. It supports saving raw
+                    16-bit heightmaps (.r16) that can be imported into other tools such as Houdini. I decided to
+                    build it to learn C++, OpenGL and WPF.
                     <br /><br />
                     The 3D viewport and core application logic is implemented in C++ and leverages OpenGL for
                     rendering. The application UI is built using C# and WPF, targeting .NET Core.
                 </p>
             </div>
             <div class="content-cell">
+                <h2>Links</h2>
+                <ul class="links">
+                    <li>
+                        <a class="link link-github" href="https://github.com/vivekhnz/sierra">GitHub repository</a>
+                    </li>
+                </ul>
                 <h2>Technologies Used</h2>
                 <table>
                     <tbody>
@@ -71,6 +78,21 @@
             <img src="../assets/sierra_Demo.gif" alt="Sierra - Terrain Sculpting" />
             <figcaption>
                 An example of the terrain sculpting tools in Sierra.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/sierra_Houdini.gif" alt="Sierra - Export to Houdini" />
+            <figcaption>
+                A terrain sculpted in Sierra imported into Houdini where additional processing (e.g. erosion) can
+                be performed.
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="../assets/sierra_Debug.gif" alt="Sierra - Debug Utilities" />
+            <figcaption>
+                An example of debug utilities I built to make it easier to develop Sierra. Shown above are
+                performance counters that highlight expensive sections of the code and visualisations of terrain
+                geometry.
             </figcaption>
         </figure>
     </div>
