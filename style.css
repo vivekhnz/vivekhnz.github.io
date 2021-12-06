@@ -257,6 +257,10 @@ ul.projects > a > li > img {
     object-fit: cover;
     border-radius: 4px 4px 0 0;
 }
+ul.projects > a > li > img.hero {
+    display: none;
+    background-color: #ff8218;
+}
 ul.projects > a > li > div {
     position: absolute;
     left: 0;
@@ -285,10 +289,13 @@ ul.projects > a > li span.year {
     font-weight: bold;
     font-family: 'Roboto';
 }
-ul.projects > a > li p {
+ul.projects > a > li p.summary {
     height: 36px;
     color: #1c1c1c;
     font-size: 13px;
+}
+ul.projects > a > li p.details {
+    display: none;
 }
 ul.projects > a > li ul {
     color: #1c1c1c;
@@ -311,15 +318,115 @@ ul.projects > a > li ul > li::after {
 ul.projects > a > li ul > li:last-child::after {
     display: none;
 }
+ul.projects > a object {
+    display: none;
+}
 
 @media (min-width: 960px) {
     ul.projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    ul.projects > a.featured {
+        grid-column: 1 / 3;
+    }
+    ul.projects > a.featured > li {
+        height: 320px;
+    }
+    ul.projects > a.featured > li > img {
+        height: 100%;
+        width: 50%;
+        border-radius: 4px 0 0 4px;
+    }
+    ul.projects > a.featured > li > img.thumbnail {
+        display: none;
+    }
+    ul.projects > a.featured > li > img.hero {
+        display: block;
+    }
+    ul.projects > a.featured > li > div {
+        left: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 296px;
+        padding: 12px 24px;
+        border-top: none;
+    }
+    ul.projects > a.featured > li > div > h3 {
+        font-size: 24px;
+    }
+    ul.projects > a.featured > li > div > h3:before {
+        content: '\2605  Featured Project';
+        display: block;
+        width: 160px;
+        font-size: 14px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        background-color: #ff8218;
+        color: white;
+        padding: 4px 8px;
+        margin-bottom: 4px;
+    }
+    ul.projects > a.featured > li > div > p.summary {
+        font-size: 14px;
+        height: auto;
+    }
+    ul.projects > a.featured > li p.details {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 13px;
+        color: #1c1c1c;
+    }
+    ul.projects > a.featured > li ul {
+        display: none;
+    }
+    ul.projects > a.featured object {
+        display: block;
+        margin-top: 16px;
+    }
+    ul.projects > a.featured object > a {
+        display: inline-block;
+        background-color: #ff8218;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        padding: 8px 12px;
+    }
+    ul.projects > a.featured object > a::after {
+        display: inline-block;
+        margin: 0 0 0 4px;
+        content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14" height="10"><path d="M 2,1 9,7 2,13" style="fill: transparent; stroke: white; stroke-width: 2px;" /></svg>');
+        width: 8px;
+        height: 14px;
+    }
+    ul.projects > a.featured object > a:hover {
+        background-color: #f8a760;
+    }
 }
 @media (min-width: 1410px) {
     ul.projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+    ul.projects > a.featured {
+        grid-column: 1 / 4;
+    }
+    ul.projects > a.featured > li > div {
+        padding: 20px 32px;
+        height: 280px;
+    }
+    ul.projects > a.featured > li > div > h3 {
+        font-size: 32px;
+    }
+    ul.projects > a.featured > li > div > h3:before {
+        font-size: 14px;
+    }
+    ul.projects > a.featured > li > div > p.summary {
+        font-size: 16px;
+    }
+    ul.projects > a.featured > li p.details {
+        font-size: 14px;
     }
 }
 
