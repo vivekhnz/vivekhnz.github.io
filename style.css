@@ -269,6 +269,7 @@ ul.projects > a > li > img {
 ul.projects > a > li > img.hero {
     display: none;
     background-color: #ff8218;
+    object-position: 25% 50%;
 }
 ul.projects > a > li > div {
     position: absolute;
