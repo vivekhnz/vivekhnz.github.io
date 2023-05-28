@@ -8,6 +8,10 @@ body {
     border-top: 3px solid #ff8218;
     font-family: 'Noto Sans', sans-serif;
 }
+::selection {
+    background-color: #ff8218;
+    color: white;
+}
 p {
     margin: 0;
     font-size: 14px;
