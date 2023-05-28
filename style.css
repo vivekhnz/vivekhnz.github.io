@@ -104,7 +104,7 @@ div.video-container iframe {
     margin-left: -4px;
 }
 #page-header #logo {
-    width: 52px;
+    width: 42px;
 }
 #page-header #logo #logo-outline {
     display: none;
@@ -116,7 +116,8 @@ div.video-container iframe {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 60px;
+    left: 50px;
+    right: 0px;
 }
 #page-header p {
     margin: 0;
@@ -133,15 +134,13 @@ div.video-container iframe {
 
 @media (min-width: 1096px) {
     #page-header #page-header-inner {
-        margin-left: -60px;
+        margin-left: -50px;
     }
-    #page-header #logo {
-        width: 52px;
-    }
-    #page-header #page-title {
-        left: 60px;
+    #page-header #page-title h1 {
+        float: left;
     }
     #page-header ul.links {
+        float: right;
         margin: 0;
     }
 }
