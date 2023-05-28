@@ -71,9 +71,9 @@ div.video-container iframe {
     max-width: 520px;
     margin: 0 auto;
 }
-@media (min-width: 960px) {
+@media (min-width: 1096px) {
     #page-container {
-        max-width: 824px;
+        max-width: 960px;
     }
     div.content-row-2-1 {
         display: flex;
@@ -131,7 +131,7 @@ div.video-container iframe {
     margin-right: 8px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1096px) {
     #page-header #page-header-inner {
         margin-left: -60px;
     }
@@ -310,7 +310,7 @@ ul.projects > a object {
     display: none;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1096px) {
     ul.projects {
         grid-template-columns: repeat(2, 1fr);
     }
