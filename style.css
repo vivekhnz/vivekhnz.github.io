@@ -258,22 +258,25 @@ ul.project-list li > a {
     margin-bottom: 32px;
     text-decoration: none;
     color: #1c1c1c;
+}
+ul.project-list img.project-icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 4px;
+    margin-right: 12px;
 
-    border-left: 3px solid #8f8f8f;
-    padding-left: 12px;
-}
-ul.project-list li > a:hover {
-    border-color: #ff8218;
-}
-ul.project-list li > a:hover h3 {
-    color: #ff8218;
+    box-shadow: 0 2px 4px #00000010;
 }
 ul.project-list div.project-info {
     flex-grow: 1;
 }
 ul.project-list div.project-info h3 {
-    margin: -8px 0 0 0;
+    margin: -6px 0 0 0;
     font-size: 20px;
+}
+ul.project-list li > a:hover h3 {
+    color: #ff8218;
 }
 ul.project-list div.project-info p {
     font-size: 13.5px;
@@ -281,6 +284,13 @@ ul.project-list div.project-info p {
 ul.project-list div.project-info p.summary {
     margin-bottom: 8px;
     font-size: 15px;
+}
+@media (min-width: 1096px) {
+    ul.project-list img.project-icon {
+        width: 56px;
+        height: 56px;
+        margin-right: 16px;
+    }
 }
 
 .link-home {
